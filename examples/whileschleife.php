@@ -29,7 +29,7 @@
                 $num = 1;
 
                 while ($num <= $zahl) {
-                    echo "<br /><br />Wir sind bei der While-Wiederholung Nummer: " . $num . "<br>";
+                    echo "Wir sind bei der While-Wiederholung Nummer: " . $num . "<br>";
                     $num++;
                 }
             }
