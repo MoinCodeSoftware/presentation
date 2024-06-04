@@ -9,12 +9,13 @@
     "HTML",
     "CSS",
     "JavaScript",
-    "PHP",
     "Ajax",
-    "SQL"
+    "SQL",
+    "C#"
 );
 
 $languages[] = "Java";
+array_unshift($languages, "PHP");
 
     $cms = array("Sehr gut" => "WordPress", "Gut" => "Joomla!", "Auch gut" => "CMSunrise", "Ganz okay" => "Typo3");
 
@@ -46,6 +47,8 @@ $languages[] = "Java";
         ?>
         </ul>
         <?php echo $layout->cardEnd(); ?>
+<br />
+        <p class="alert alert-primary">Verwendung auch von Array Funktionen z.B. array_unshift für den showcase. Bitte Sourcecode ansehen.</p>
 
 
-<?php include('pages/header.php'); ?>
+<?php include('pages/footer.php'); ?>
