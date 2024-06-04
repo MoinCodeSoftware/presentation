@@ -89,8 +89,11 @@
                         <li><a href="examples/ifelse.php">If-Else</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/ifelse.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/stringoperations.php">String Operationen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/stringoperations.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/whileschleife.php">While Schleifen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/whileschleife.php" target="_blank">GitHub</a></li>
-                            <li><a href="examples/whileschleife.php">For Schleifen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/forschleife.php" target="_blank">GitHub</a></li>
-                    </ul>
+                        <li><a href="examples/whileschleife.php">For Schleifen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/forschleife.php" target="_blank">GitHub</a></li>
+                            <li><a href="examples/whileschleife.php">Do-While Schleife</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/dowhile.php" target="_blank">GitHub</a></li>
+                    
+                    
+                        </ul>
                 </div>
                 </div>
             </div>
