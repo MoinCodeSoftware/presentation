@@ -11,7 +11,7 @@
     echo 'empty($beispielEmpty = "") === ';
     var_dump(empty($beispielEmpty));
     echo '<br />';
-    echo 'empty($beispielZeroStr = "0") === ';
+    echo 'unbliebter Sonderfall: empty($beispielZeroStr = "0") === ';
     var_dump(empty($beispielZeroStr));
     echo '<br />';
     echo 'empty($beispielZero = 0) === ';
