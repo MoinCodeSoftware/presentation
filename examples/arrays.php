@@ -24,7 +24,7 @@ array_unshift($languages, "PHP");
 <div class="container">
 
 
-        <h2>Programmiersprachen</h2>
+        <h2>Programmiersprachen (Arrays)</h2>
 
         <?php echo $layout->cardStart(); ?>
         <ul>
@@ -36,7 +36,7 @@ array_unshift($languages, "PHP");
         </ul>
         <?php echo $layout->cardEnd(); ?>
         <br />
-        <h2>Content Management Systeme</h2>
+        <h2>Content Management Systeme (Assoziative Arrays)</h2>
 
         <?php echo $layout->cardStart(); ?>
         <ul>
