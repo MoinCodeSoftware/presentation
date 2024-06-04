@@ -24,5 +24,4 @@
             <button type="submit" class="btn btn-primary">Start</button>
         </form>
     </div>
-</body>
-</html>
+    <?php include('pages/footer.php'); ?>

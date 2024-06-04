@@ -41,3 +41,5 @@ if($ergebnis !== false) {
 }
 
 ?>
+
+<?php include('pages/footer.php'); ?>

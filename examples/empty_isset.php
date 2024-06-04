@@ -34,3 +34,5 @@
     echo '<br />';
 
 ?>
+
+<?php include('pages/footer.php'); ?>

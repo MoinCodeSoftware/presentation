@@ -30,5 +30,4 @@
         ?>
 
     </div>
-</body>
-</html>
+<?php include('pages/footer.php'); ?>

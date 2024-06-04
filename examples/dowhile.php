@@ -25,3 +25,5 @@ $counter--;
 } while($counter >= 1);
 
 ?>
+
+<?php include('pages/footer.php'); ?>
