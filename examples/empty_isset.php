@@ -1,4 +1,4 @@
-<?php
+<?php include('pages/header.php'); 
 
 //Beispiel Umgang mit empty()
 

@@ -1,4 +1,4 @@
-<?php
+<?php include('pages/header.php'); 
 
 $testname = "Hallo Timm";
 $ergebnis = strpos($testname, "Hallo");
