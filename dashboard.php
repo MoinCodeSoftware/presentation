@@ -52,7 +52,7 @@
             <div class="col-md-6">
                 <div class="card">
                 <div class="card-body">
-                    <h2>PHP Funktionen</h2>
+                    <h2>PHP Basics</h2>
                     <ul>
                         <li><a href="examples/empty_isset.php">Empty und Isset</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/empty_isset.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/ifelse.php">If-Else</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/ifelse.php" target="_blank">GitHub</a></li>
