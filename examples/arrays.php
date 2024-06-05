@@ -5,26 +5,47 @@
 
     $layout = new Layouthelper();
 
-    $languages = array(
+    $languages = [
     "HTML",
     "CSS",
     "JavaScript",
     "Ajax",
     "SQL",
     "C#"
-);
+    ];
 
 $languages[] = "Java";
 array_unshift($languages, "PHP");
 
-    $cms = array("Sehr gut" => "WordPress", "Gut" => "Joomla!", "Auch gut" => "CMSunrise", "Ganz okay" => "Typo3");
+    $cms = array("sehr gut" => "WordPress", "gut" => "Joomla!", "auch gut" => "CMSunrise", "ganz okay" => "Typo3");
+    $cms["noch so einiges mehr"] = "Zusätzlich";
+
+
+    $alles = [
+        "Programmierung" => [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Ajax",
+            "SQL",
+            "C#"
+    ],
+        "E-Commerce" => [
+            "Magento",
+            "Shopware",
+            "WooCommerce",
+            "OSCommerce",
+            "JTL Shop"
+        ]
+    ];
+
 
 ?>
    <h1>Arrays</h1>
 <div class="container">
 
 
-        <h2>Programmiersprachen (Arrays)</h2>
+        <h2>Arrays</h2>
 
         <?php echo $layout->cardStart(); ?>
         <ul>
@@ -36,7 +57,7 @@ array_unshift($languages, "PHP");
         </ul>
         <?php echo $layout->cardEnd(); ?>
         <br />
-        <h2>Content Management Systeme (Assoziative Arrays)</h2>
+        <h2>Assoziative Arrays</h2>
 
         <?php echo $layout->cardStart(); ?>
         <ul>
@@ -47,6 +68,23 @@ array_unshift($languages, "PHP");
         ?>
         </ul>
         <?php echo $layout->cardEnd(); ?>
+<br />
+
+        <h2>Mehrdimensionale Arrays</h2>
+    
+        <?php
+            echo '<ul class="list-group">';
+            foreach($alles AS $programmiersprachen => $items) {
+                echo "<li class='list-group-item'><b>{$programmiersprachen}</b><ul class='list-group'>";
+                foreach($items as $item) {
+                    echo "<li class='list-group-item'>{$item}</li>";
+                }
+                echo "</ul></li>";
+            echo "</ul>";
+            }
+        ?>
+       
+
 <br />
         <p class="alert alert-primary">Verwendung auch von Array Funktionen z.B. array_unshift für den showcase. Bitte Sourcecode ansehen.</p>
 
