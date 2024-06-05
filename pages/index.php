@@ -1,5 +1,8 @@
-<?php $pdo = new PDO('mysql:host=localhost;dbname=blog2','root',''); ?>
+<?php 
 
+    require_once('../db.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,17 +14,22 @@
     <style>
         body {
             padding-top: 70px;
+            background-color: #f8f9fa;
         }
         .smallText {
             font-size:7px !important;
         }
+        ul.my li:hover {
+            background-color: lightblue;
+        }
+     
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="go.php">Mein kleines MVC</a>
+            <a class="navbar-brand" href="go.php">MyMVC Framework</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,13 +53,13 @@
         <p class="justify-content-center row smallText">powered by MyMVC Framework</p>
 
     <?php
-        $result = $pdo->query("SELECT * FROM `posts`");
+        $result = fetch_posts();
 
-        echo '<ul class="list-group">';
+        echo '<ul class="my list-group">';
 
         foreach($result AS $post) : ?>
 
-        <li class='list-group-item'>
+        <li class='my list-group-item'>
             <?php echo $post['title']; ?>
         </li>
 
