@@ -63,6 +63,9 @@
                         <li><a href="examples/dowhile.php">Include or Require </a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/includerequire.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/dowhile.php">Break and Continue</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/breakandcontinue.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/arrays.php">Arrays</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/breakandcontinue.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/functions.php">Funktionen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/functions.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/klassen.php">Klassen und Vererbung</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/klassen.php" target="_blank">GitHub</a></li>
+                    
                     </ul>
                 </div>
                 </div>
