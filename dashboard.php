@@ -60,8 +60,8 @@
                         <li><a href="examples/whileschleife.php">While Schleifen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/whileschleife.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/forschleife.php">For Schleifen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/forschleife.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/dowhile.php">Do-While Schleife</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/dowhile.php" target="_blank">GitHub</a></li>
-                        <li><a href="examples/dowhile.php">Include or Require </a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/includerequire.php" target="_blank">GitHub</a></li>
-                        <li><a href="examples/dowhile.php">Break and Continue</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/breakandcontinue.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/includerequire.php">Include or Require </a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/includerequire.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/breakandcontinue.php">Break and Continue</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/breakandcontinue.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/arrays.php">Arrays</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/breakandcontinue.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/functions.php">Funktionen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/functions.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/klassen.php">Klassen und Vererbung</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/klassen.php" target="_blank">GitHub</a></li>
@@ -74,8 +74,9 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h2>Projekt</h2>
-                        <p>Hier ist ein Link zu meinem Projekt:</p>
+                        <h2>MyMVC Framework</h2>
+                        <p>Zend, Laravel, Symfony? Wie wäre es mit einem eigenen Framework? Jedes Framework hat seine Vorteile und Eigenheiten. 
+                            Um wirklich sicherzustellen, das Prinzip zu verstehen und damit jedes Framework schnell lernen zu können, lohnt es sich, sein eigenes Framework zu entwickeln. </p>
                         <a href="project.php">Projekt</a>
                     </div>
                 </div>
