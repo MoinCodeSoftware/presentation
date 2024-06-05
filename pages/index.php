@@ -1,4 +1,4 @@
-<?php $pdo = new PDO('mysql:host=localhost;dbname=blog','root',''); ?>
+<?php $pdo = new PDO('mysql:host=localhost;dbname=blog2','root',''); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,11 +44,24 @@
         </div>
         <p class="justify-content-center row smallText">powered by MyMVC Framework</p>
 
-        <?php
-        $res = $pdo->query("SELECT * FROM `posts`");
-        var_dump($res);
+    <?php
+        $result = $pdo->query("SELECT * FROM `posts`");
 
-        ?>
+        echo '<ul class="list-group">';
+
+        foreach($result AS $post) : ?>
+
+        <li class='list-group-item'>
+            <?php echo $post['title']; ?>
+        </li>
+
+    <?php
+        endforeach;
+
+        echo '</ul>';
+   
+
+    ?>
 
     </div>
 
