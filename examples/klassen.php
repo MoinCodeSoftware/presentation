@@ -18,7 +18,7 @@ class MutterKlasse {
     public $name;
     private $iban = "DE609289283992843";
     private $constructorOut = "";
-
+    protected $ueberschreibMich = "MutterklasseVariable";
 
     public function __construct() 
     {
@@ -51,6 +51,39 @@ class MutterKlasse {
 
 $mutterObj = new MutterKlasse();
 
+/* Vererbung Showcase */
+
+class KindKlasse extends MutterKlasse {
+
+    private $iban;
+
+    public function getName($name)
+    {
+        $prepareName = "Das hier ist die Kindklasse {$name}";
+        return $prepareName;
+    }
+    public function setIBAN() 
+    {
+        $this->iban = "DE000000000000000000";
+        return $this->iban;
+    }
+
+    public function getIBAN() 
+    {
+        return parent::getIBAN();
+    }
+
+    public function getProtected() 
+    {
+        $this->ueberschreibMich = "In Kindklasse überschrieben";
+        return $this->ueberschreibMich;
+    }
+
+}
+
+$kindKlasseObj = new KindKlasse();
+
+
 
 ?>
 
@@ -77,6 +110,32 @@ $mutterObj = new MutterKlasse();
 
 <?php
     echo $mutterObj->setIBAN();
+?>
+
+<h2>Vererbung mit Kindklasse</h2>
+
+<?php
+    echo $kindKlasseObj->getName("Kindklasse");
+?>
+
+
+<h2>Vererbung mit Kindklasse mit setIBAN</h2>
+
+<?php
+    echo $kindKlasseObj->setIBAN();
+?>
+
+<h2>Auf Elternklassen Funktion via ::parent zugreifen</h2>
+
+<?php
+    echo $kindKlasseObj->getIBAN();
+?>
+
+
+<h2>In Kindklasse auf protected Variable der Elternklasse zugreifen</h2>
+
+<?php
+    echo $kindKlasseObj->getProtected();
 ?>
 
 
