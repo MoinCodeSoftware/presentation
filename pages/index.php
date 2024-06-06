@@ -23,8 +23,8 @@ use App\Post\PostsRepository as PostsRepository;
     foreach($result AS $post) : ?>
 
     <li class='my list-group-item'>
-        <a href="post.php?id=<?php echo $post['id']; ?>">
-            <?php echo $post['title']; ?>
+        <a href="post.php?id=<?php echo $post->id; ?>">
+            <?php echo $post->title; ?>
         </a>
     </li>
 

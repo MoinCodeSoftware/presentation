@@ -15,7 +15,11 @@ class PostsRepository
     }
     function fetchPosts() {
             
-        return $this->pdo->query("SELECT * FROM `posts`");
+        $statement = $this->pdo->query("SELECT * FROM `posts`");
+        $posts = $statement->fetchAll(PDO::FETCH_CLASS, "App\\Post\\PostModel");
+
+        return $posts;
+
     }
 
     function fetchPost($id) 
@@ -23,7 +27,14 @@ class PostsRepository
       
         $statement = $this->pdo->prepare("SELECT * FROM `posts` WHERE id = :id");
         $statement->execute(['id' => $id]);
-        return $statement->fetch();
+        $statement->setFetchMode(PDO::FETCH_CLASS, "App\\Post\\PostModel");
+        $post = $statement->fetch(PDO::FETCH_CLASS);
+
+        return $post;
+    }
+
+    function getShortContent() {
+
     }
 
 
