@@ -1,7 +1,6 @@
 <?php
 
-    require("autoload.php");
-    require("db.php");
-
+    require(__DIR__."/autoload.php");
+    require(__DIR__."/db.php");
 
 ?>

@@ -1,5 +1,10 @@
 <?php require_once('../init.php'); ?>
-<?php include ('elements/header.php'); ?>
+<?php include ('elements/header.php'); 
+
+use App\Post\PostsRepository as PostsRepository;
+
+
+?>
 
 <div class="container mt-5">
     <div class="row justify-content-center">
@@ -9,7 +14,9 @@
 
 
 <?php
-    $result = fetch_posts();
+
+    $postsRepository = new PostsRepository($pdo);
+    $result = $postsRepository->fetchPosts();
 
     echo '<ul class="my list-group">';
 

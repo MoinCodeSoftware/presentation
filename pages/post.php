@@ -12,7 +12,9 @@
 <?php
 
 $id = $_GET['id'];
-$post = fetch_post($id);
+$postRepository = new App\Post\PostsRepository($pdo);
+
+$post = $postRepository->fetchPost($id);
 
 ?>
 
