@@ -1,4 +1,4 @@
-<?php require_once('../db.php'); ?>
+<?php require_once('../init.php'); ?>
 <?php include ('elements/header.php'); ?>
 
 <div class="container mt-5">
