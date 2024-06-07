@@ -32,4 +32,17 @@ class Layouthelper {
     
 
 
+        public function formatCode($code) {
+
+
+            ob_start();
+            highlight_string($code);
+            
+            $codeOutput = ob_get_clean();
+
+            return $codeOutput;
+
+
+        }
+
 }
