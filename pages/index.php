@@ -1,7 +1,12 @@
-<?php require_once('../init.php'); ?>
-<?php include ('elements/header.php'); 
+<?php require_once('../init.php'); 
 
-use App\Post\PostsRepository as PostsRepository;
+//use App\Post\PostsRepository as PostsRepository;
+
+$postsController = $container->make("postsController");
+$postsController->index();
+
+
+die();
 
 
 ?>
@@ -36,6 +41,3 @@ use App\Post\PostsRepository as PostsRepository;
 
 ?>
 
-
-
-  <?php include ('elements/footer.php'); ?>
