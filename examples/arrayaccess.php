@@ -100,6 +100,7 @@ $code = 'class Entry implements ArrayAccess
 
 
 <h1>ArrayAccess Beispiel</h1>
+
 <div class="container">
 
 <?php
