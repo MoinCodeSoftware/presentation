@@ -20,4 +20,6 @@ echo "<br /><br />";
 $beispielObj->$methode();
 
 
+
+
 ?>

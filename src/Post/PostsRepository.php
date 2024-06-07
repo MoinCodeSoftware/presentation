@@ -16,7 +16,7 @@ class PostsRepository
     function fetchPosts() {
             
         $statement = $this->pdo->query("SELECT * FROM `posts`");
-        $posts = $statement->fetchAll(PDO::FETCH_CLASS, "App\\Post\\PostModel");
+        $posts     = $statement->fetchAll(PDO::FETCH_CLASS, "App\\Post\\PostModel");
 
         return $posts;
 

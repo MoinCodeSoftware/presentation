@@ -15,7 +15,7 @@ use App\Post\PostsRepository as PostsRepository;
 
 <?php
 
-    $postsRepository = new PostsRepository($pdo);
+    $postsRepository = $container->getPostsRepository();
     $result = $postsRepository->fetchPosts();
 
     echo '<ul class="my list-group">';

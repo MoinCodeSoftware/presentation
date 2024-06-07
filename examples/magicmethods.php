@@ -49,15 +49,12 @@ echo "<br /><br />";
 var_dump($go->triggervar);
 
 
-
 echo "<br /><br />";echo "<br /><br />";
 echo "<h2>__isset()</h2>";
 
 var_dump(isset($go->urknall));
 echo "<br /><br />";
 var_dump(isset($go->keinurknall));
-
-
 
 
 echo "<br /><br />";echo "<br /><br />";

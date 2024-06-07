@@ -11,10 +11,9 @@
 
 <?php
 
-$id = $_GET['id'];
-$postRepository = new App\Post\PostsRepository($pdo);
-
-$post = $postRepository->fetchPost($id);
+    $id = $_GET['id'];
+    $postRepository = $container->getPostsRepository();
+    $post = $postRepository->fetchPost($id);
 
 ?>
 
@@ -23,13 +22,13 @@ $post = $postRepository->fetchPost($id);
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title"><?php echo $post->title; ?></h3>
+        <h3 class="panel-title"><?php echo $post['title']; ?></h3>
     </div>
 
-   <?php echo $post->getShortContent($post->content); ?>
+   <?php echo $post->getShortContent($post['content']); ?>
     
     <div class="panel-body">
-        <p><?php echo nl2br($post->content); ?></p>
+        <p><?php echo nl2br($post['content']); ?></p>
     </div>
 </div>
 
