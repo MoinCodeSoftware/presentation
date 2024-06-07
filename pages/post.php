@@ -26,6 +26,8 @@ $post = $postRepository->fetchPost($id);
         <h3 class="panel-title"><?php echo $post->title; ?></h3>
     </div>
 
+   <?php echo $post->getShortContent($post->content); ?>
+    
     <div class="panel-body">
         <p><?php echo nl2br($post->content); ?></p>
     </div>
