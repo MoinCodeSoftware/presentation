@@ -62,9 +62,11 @@
                         <li><a href="examples/dowhile.php">Do-While Schleife</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/dowhile.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/includerequire.php">Include or Require </a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/includerequire.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/breakandcontinue.php">Break and Continue</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/breakandcontinue.php" target="_blank">GitHub</a></li>
-                        <li><a href="examples/arrays.php">Arrays</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/breakandcontinue.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/arrays.php">Arrays</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/arrays.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/functions.php">Funktionen</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/functions.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/klassen.php">Klassen und Vererbung</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/klassen.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/arrayaccess.php">ArrayAccess Interface</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/arrayaccess.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/typedeclarations.php">Type Declarations</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/typedeclarations.php" target="_blank">GitHub</a></li>
                     
                     </ul>
                 </div>
