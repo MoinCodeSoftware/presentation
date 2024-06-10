@@ -4,18 +4,28 @@ require ("../init.php");
 
 /* var_dump($_SERVER);
 var_dump($container); */
-
-$pathInfo = $_SERVER['PATH_INFO'];
-
-if($pathInfo == "/index") {
-
-    $postsController = $container->make("postsController");
-    $postsController->index();
-
-} elseif($pathInfo == "/post") {
-    $postsController = $container->make("postsController");
-    $postsController->show();
+if (isset($_SERVER['PATH_INFO'])) {
+    $pathInfo = $_SERVER['PATH_INFO'];
+} else {
+    $pathInfo = '/';
 }
+
+
+$routes = [
+    '/index' =>  ['controller' => 'postsController', 'method' => 'index'],
+    '/post' => ['controller' => 'postsController', 'method' => 'show']
+];
+
+if(isset($routes[$pathInfo])) {
+
+    $route           = $routes[$pathInfo];
+    $routeController = $route['controller'];
+    $routeMethod     = $route['method'];
+
+    $controller = $container->make($routeController);
+    $controller->$routeMethod();
+}
+
 
 
 ?>
