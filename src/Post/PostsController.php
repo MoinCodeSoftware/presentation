@@ -2,7 +2,10 @@
 
 namespace App\Post;
 
-class PostsController 
+use App\Core\AbstractController;
+
+
+class PostsController extends AbstractController
 {
 
     public function __construct(PostsRepository $postsRepository) 
@@ -10,24 +13,6 @@ class PostsController
         $this->postsRepository = $postsRepository;
     }
 
-
-    protected function render($view, $params) 
-    {
-
-   /*      $name = "params";
-        var_dump(${$name}); */
-
-        /* foreach($params as $key => $value) {
-            ${$key} = $value;
-        } */
-
-        extract($params);
-
-
-        include __DIR__ . "/../../views/{$view}.php";
-
-
-    }
 
     public function index() 
     {
