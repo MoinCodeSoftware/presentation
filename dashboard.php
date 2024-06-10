@@ -72,7 +72,6 @@
                         <li><a href="examples/invoke.php">Invoke Beispiel</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/invoke.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/exceptions.php">Exceptions</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/exceptions.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/closures.php">Closures</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/closures.php" target="_blank">GitHub</a></li>
-                    
                     </ul>
                 </div>
                 </div>
@@ -84,7 +83,7 @@
                         <h2>MyMVC Framework</h2>
                         <p>Zend, Laravel, Symfony? Wie wäre es mit einem eigenen Framework? Jedes Framework hat seine Vorteile und Eigenheiten. 
                             Um wirklich sicherzustellen, das Prinzip zu verstehen und damit jedes Framework schnell lernen zu können, lohnt es sich, sein eigenes Framework zu entwickeln. </p>
-                        <a href="pages/index.php">Projekt</a>
+                        <a href="pages/index.php">MVC Projekt</a>
                     </div>
                 </div>
             </div>
