@@ -67,6 +67,11 @@
                         <li><a href="examples/klassen.php">Klassen und Vererbung</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/klassen.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/arrayaccess.php">ArrayAccess Interface</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/arrayaccess.php" target="_blank">GitHub</a></li>
                         <li><a href="examples/typedeclarations.php">Type Declarations</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/typedeclarations.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/variableattributes.php">Variable Attribute & Methoden</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/variableattributes.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/magicmethods.php">Magische Methoden</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/magicmethods.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/invoke.php">Invoke Beispiel</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/invoke.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/exceptions.php">Exceptions</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/exceptions.php" target="_blank">GitHub</a></li>
+                        <li><a href="examples/closures.php">Closures</a> | <a href="https://github.com/MoinCodeSoftware/presentation/blob/main/examples/closures.php" target="_blank">GitHub</a></li>
                     
                     </ul>
                 </div>

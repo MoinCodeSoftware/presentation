@@ -27,7 +27,7 @@ function addiere(int|float $a, int|float $b) : int|float
 }
 
 
-function retStrOrNull(int $a) : null|string  //short wäre ?string aber nur bei einem type
+function retStrOrNull(int $a) : null|string  //short wäre hier ?string aber nur bei 1 type
 {
 
     if($a === 7) {

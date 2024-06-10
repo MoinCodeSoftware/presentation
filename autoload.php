@@ -1,5 +1,9 @@
 <?php
 /**
+ * 
+ * PSR 4 Autoloader von PHP FIG genommen !
+ * 
+ * 
  * An example of a project-specific implementation.
  *
  * After registering this autoload function with SPL, the following line
