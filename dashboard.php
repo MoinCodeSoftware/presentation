@@ -84,7 +84,7 @@
                         <h2>MyMVC Framework</h2>
                         <p>Zend, Laravel, Symfony? Wie wäre es mit einem eigenen Framework? Jedes Framework hat seine Vorteile und Eigenheiten. 
                             Um wirklich sicherzustellen, das Prinzip zu verstehen und damit jedes Framework schnell lernen zu können, lohnt es sich, sein eigenes Framework zu entwickeln. </p>
-                        <a href="project.php">Projekt</a>
+                        <a href="pages/index.php">Projekt</a>
                     </div>
                 </div>
             </div>
