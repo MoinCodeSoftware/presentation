@@ -8,7 +8,7 @@ echo '<ul class="my list-group">';
 foreach($posts AS $post) : ?>
 
 <li class='my list-group-item'>
-    <a href="post.php?id=<?php echo $post->id; ?>">
+    <a href="post?id=<?php echo $post->id; ?>">
         <?php echo $post->title; ?>
     </a>
 </li>

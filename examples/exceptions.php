@@ -5,7 +5,7 @@
 class MeineException extends Exception
 {
 
-
+    
 
 }
 

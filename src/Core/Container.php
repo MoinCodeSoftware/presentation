@@ -5,7 +5,8 @@ namespace App\Core;
 use PDO;
 use App\Post\PostsRepository;
 use App\Post\PostsController;
-
+use Exception;
+use PDOException;
 
 class Container 
 {
@@ -17,9 +18,7 @@ class Container
     {
       $this->receipts = [
         'postsController' => function() {
-            return new PostsController(
-                $this->make('postsRepository')
-            );
+            return new PostsController($this->make('postsRepository'));
         },
         'postsRepository' => function() {
           return new PostsRepository(
@@ -27,11 +26,18 @@ class Container
           );
         },
         'pdo' => function() {
-            $pdo = new PDO(
+
+          try {
+             $pdo = new PDO(
                 'mysql:host=localhost;dbname=blog;charset=utf8',
                 'root',
                 ''
             ); 
+          } catch(PDOException $e) {
+              echo "Critical: Verbindung zur DB fehlgeschlagen.";
+              die();
+          }
+           
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           return $pdo;
         }
