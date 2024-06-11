@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="dashboard.php">Startseite</a>
+                    <a class="nav-link" href="index.php">Startseite</a>
                 </li>
                 <!-- Weitere Navigationspunkte hier einfügen -->
             </ul>
@@ -34,12 +34,11 @@
                 <div class="card">
                     <div class="card-body">
                         <h2>Willkommen im Dashboard</h2>
-                        <p>Für mein aktuelles Bewerbungsverfahren nach fünf Jahren Selbständigkeit werde ich häufig nach Referenzen gefragt. 
-                            Da ich diese zwar vorweisen aber nicht im Detail den Code preisgeben kann, soll dieses Repository einen Einblick über Skills und Stil vermitteln.</p>
-                            <p>Ziel ist es, alle von mir verwendeten Technologien einmal anzuwenden und darzustellen. Daher wird dieses Repository mit der Zeit wachsen. Im Kern sind 
-                                dies HTML, CSS, JavaScript, jQuery, PHP, Ajax, SQL aber auch APIs und Schnittstellen mit XML, CSV, JSON werden folgen, sowie verschiedene Arbeiten mit 
-                                Frameworks wie Laravel, Symfony, Zend. Für den Start soll ein eigenes Framework auf MVC Basis vermitteln, dass ich über das generelle Verständnis eines jeden
-                                MVC basierten Frameworks verfüge und es auch selbst nachgebaut habe. 
+                        <p>Im Rahmen meiner aktuellen Bewerbungsphase ist es gut neben meinen Referenzen auch einen umfassenden Einblick in meine Fähigkeiten zu geben. Hierfür habe ich dieses Repository erstellt, in welchem man den Aufbau eines eigenen MVCs beobachten kann in der Commit-Historie.
+                        </p><p>
+Ziel dieses Projekts ist es, alle Technologien, die ich verwende, in einer praxisnahen Anwendung zu demonstrieren. Mit der Zeit wird dieses Repository wachsen und eine Vielzahl von Techniken und Frameworks umfassen, darunter HTML, CSS, JavaScript, jQuery, PHP, Ajax und SQL. Darüber hinaus werden Schnittstellen mit XML, CSV und JSON sowie Arbeiten mit Frameworks wie Laravel, Symfony und Zend integriert.
+</p><p>
+Zum Start präsentiere ich ein <a href="public/index.php/index">eigenes Framework</a> auf Basis des MVC-Prinzips. Dies dient als Anschauungsbeispiel meines Verständnisses von MVC-basierten Frameworks und meiner Fähigkeit, diese selbst zu implementieren und zu <a href="https://github.com/MoinCodeSoftware/presentation" target="_blank">versionieren</a>.</p>
                             </p>
                     </div>
                 </div>
