@@ -3,13 +3,13 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title"><?php echo $post['title']; ?></h3>
+        <h3 class="panel-title"><?php echo secOutput($post['title']); ?></h3>
     </div>
 
-   <?php echo $post->getShortContent($post['content']); ?>
+   <?php echo secOutput($post->getShortContent($post['content'])); ?>
     
     <div class="panel-body">
-        <p><?php echo nl2br($post['content']); ?></p>
+        <p><?php echo secOutput($post['content']); ?></p>
     </div>
 </div>
 
@@ -22,7 +22,7 @@
 foreach($comments as $comment) { ?>
 
 <li class="list-group-item">
-    <?php echo nl2br($comment['content']); ?>
+    <?php echo secOutput($comment['content']); ?>
 </li>
 
 <?php } ?>

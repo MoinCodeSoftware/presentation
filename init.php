@@ -5,6 +5,10 @@
 
     $container = new App\Core\Container();
 
+    function secOutput($str)
+    {
+        return htmlentities(nl2br($str), ENT_QUOTES, 'UTF-8');
+    }
     
 
 ?>
