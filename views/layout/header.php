@@ -21,6 +21,9 @@
         .navbar {
             border-radius:0px;
         }
+        .list-group-item:nth-child(even) {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 
