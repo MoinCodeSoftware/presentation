@@ -83,7 +83,7 @@ Zum Start präsentiere ich ein eigenes Framework auf Basis des MVC-Prinzips. Die
     http://localhost:8000
     ```
 5. **Admin Test-Zugang:**
-Benutzer: admin    
+    Benutzer: admin    
     Password: test
  
 
