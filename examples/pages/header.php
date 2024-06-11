@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../dashboard.php">Startseite</a>
+                    <a class="nav-link" href="../index.php">Startseite</a>
                 </li>
                 <!-- Weitere Navigationspunkte hier einfügen -->
             </ul>
