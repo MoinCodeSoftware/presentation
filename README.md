@@ -38,27 +38,26 @@ Dieses Projekt wird kontinuierlich erweitert und umfasst folgende Technologien:
 Zum Start präsentiere ich ein eigenes Framework auf Basis des MVC-Prinzips. Dies dient als Beweis meines tiefgehenden Verständnisses von MVC-basierten Frameworks und meiner Fähigkeit, diese selbst zu implementieren.
 
 ### Ordnerstruktur
-
 /project-root
 │
 ├── /app
-│ ├── Controllers
-│ ├── Models
-│ └── Views
+│   ├── Controllers
+│   ├── Models
+│   └── Views
 │
 ├── /public
-│ ├── css
-│ ├── js
-│ └── index.php
+│   ├── css
+│   ├── js
+│   └── index.php
 │
 ├── /resources
-│ └── ...
+│   └── ...
 │
 ├── /routes
-│ └── web.php
+│   └── web.php
 │
 └── /vendor
-└── ...
+    └── ...
 
 
 ## Installation und Nutzung
@@ -88,8 +87,8 @@ Zum Start präsentiere ich ein eigenes Framework auf Basis des MVC-Prinzips. Die
 Für weitere Informationen oder Fragen stehe ich gerne zur Verfügung.
 
 - **E-Mail:** hallo@moincode.de
-- **LinkedIn:** [dein LinkedIn Profil](https://www.linkedin.com/in/timm-f-kluth-2ab295108/)
-- **Website:** [deinewebsite.com](http://www.moincode.de)
+- **LinkedIn:** [LinkedIn Profil](https://www.linkedin.com/in/timm-f-kluth-2ab295108/)
+- **Website:** [moincode.de](http://www.moincode.de)
 
 ---
 
