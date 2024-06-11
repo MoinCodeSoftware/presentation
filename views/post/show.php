@@ -15,29 +15,25 @@
 
 <h2>Kommentare</h2>
 
+
+<ul class="list-group">
 <?php
 
 foreach($comments as $comment) { ?>
 
-
-<div class="panel panel-default">
-<div class="panel-body">
-        <p><?php echo nl2br($comment['content']); ?></p>
-    </div>
-</div>
-
+<li class="list-group-item">
+    <?php echo nl2br($comment['content']); ?>
+</li>
 
 <?php } ?>
+</ul>
 
 
 <div class="panel panel-default">
     <div class="panel-body">
-        <form action="post?id=<?php echo $id; ?>" method="POST">
+        <form action="post?id=<?php echo $post['id']; ?>" method="POST">
 
-            <textarea name="content" class="form-control">
-
-
-            </textarea>
+            <textarea name="content" class="form-control"></textarea>
             <br />
             <input type="submit" value="Kommentar hinzufügen" class="btn btn-primary">
 
