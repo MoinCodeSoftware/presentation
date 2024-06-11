@@ -4,46 +4,48 @@
 namespace App\User;
 
 use App\Core\AbstractController;
+use App\User\LoginService;
 
 class LoginController extends AbstractController
 {
 
-    public function __construct(UsersRepository $usersRepository)
+    public function __construct(LoginService $loginService)
     {
-
-        $this->usersRepository = $usersRepository;
-
+        $this->loginService = $loginService;
     }
 
+    public function dashboard() {
+
+        $this->loginService->check();
+        $this->render("user/dashboard", []);
+       
+    }
+
+    public function logout()
+    {
+        $this->loginService->logout();
+    }
 
     public function login()
     {
 
+        $err = "";
+
         if(!empty($_POST["username"]) && !empty($_POST['password']))
         {
-
-
-            $err = null;
 
             $username = $_POST["username"];
             $password = $_POST["password"];
 
-            $user = $this->usersRepository->findByUsername($username);
-
-            if(!empty($user)) {
-
-                if(password_verify($password, $user->password))
-                {
-                        echo "LOGIN ERFOLGREICH";
-                } else {
-                    $err = "Passwort falsch!";
-                }
-
+            if($this->loginService->attempt($username, $password)) {
+                header("Location: dashboard");
+                return;
             } else {
-                $err = "Kein Benutzer mit dem Usernamen vorhanden!";
+                $err = "Benutzername oder Passwort falsch";
             }
-            var_dump($password);
 
+        } else {
+           $err = "Eingaben unvollständig.";
         }
 
         $this->render("user/login", ['err' => $err]);

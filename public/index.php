@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require ("../init.php");
 
 /* var_dump($_SERVER);
@@ -14,7 +16,9 @@ if (isset($_SERVER['PATH_INFO'])) {
 $routes = [
     '/index' =>  ['controller' => 'postsController', 'method' => 'index'],
     '/post' => ['controller' => 'postsController', 'method' => 'show'],
-    '/login' => ['controller' => 'loginController', 'method' => 'login']
+    '/login' => ['controller' => 'loginController', 'method' => 'login'],
+    '/dashboard' => ['controller' => 'loginController', 'method' => 'dashboard'],
+    '/logout' => ['controller' => 'loginController', 'method' => 'logout']
 ];
 
 if(isset($routes[$pathInfo])) {
