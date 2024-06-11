@@ -59,7 +59,7 @@ Zum Start präsentiere ich ein eigenes Framework auf Basis des MVC-Prinzips. Die
 │
 └── /vendor
     └── ... ```
-   
+   ```
 
 ## Installation und Nutzung
 
