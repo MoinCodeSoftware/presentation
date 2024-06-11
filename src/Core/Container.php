@@ -7,6 +7,8 @@ use App\Post\PostsRepository;
 use App\Post\CommentsRepository;
 use App\Post\PostsController;
 use Exception;
+use App\User\UsersRepository;
+use App\User\LoginController;
 use PDOException;
 
 class Container 
@@ -18,6 +20,9 @@ class Container
     public function __construct()
     {
       $this->receipts = [
+        'loginController' => function() {
+          return new LoginController($this->make('usersRepository'));
+        },
         'postsController' => function() {
             return new PostsController($this->make('postsRepository'), $this->make('commentsRepository'));
         },
@@ -28,6 +33,11 @@ class Container
         },
         'postsRepository' => function() {
           return new PostsRepository(
+            $this->make("pdo")
+          );
+        },
+        'usersRepository' => function() {
+          return new UsersRepository(
             $this->make("pdo")
           );
         },

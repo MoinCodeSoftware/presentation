@@ -6,7 +6,7 @@
         <h3 class="panel-title"><?php echo secOutput($post['title']); ?></h3>
     </div>
 
-   <?php echo secOutput($post->getShortContent($post['content'])); ?>
+   <?php echo $post->getShortContent($post['content']); ?>
     
     <div class="panel-body">
         <p><?php echo secOutput($post['content']); ?></p>
