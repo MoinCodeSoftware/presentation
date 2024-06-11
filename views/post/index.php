@@ -12,12 +12,14 @@ foreach($posts AS $post) : ?>
         <?php echo secOutput($post->title); ?>
     </a>
 </li>
-
 <?php
 
 endforeach;
 
 echo '</ul>';
+
+
+
 include __DIR__ . "/../../views/layout/footer.php";
 
 ?>

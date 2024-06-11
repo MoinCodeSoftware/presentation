@@ -9,7 +9,7 @@ class PostsAdminController extends AbstractController
 
     public function __construct(
         PostsRepository $postsRepository, 
-    LoginService $loginService) {
+        LoginService $loginService) {
 
         $this->postsRepository = $postsRepository;
         $this->loginService = $loginService;
