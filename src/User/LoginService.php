@@ -34,7 +34,7 @@ class LoginService
 
     public function logout() 
     {
-        unset($_SESION['login']);
+        unset($_SESSION['login']);
         header("Location: login");
     }
 

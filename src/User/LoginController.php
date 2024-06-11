@@ -16,6 +16,7 @@ class LoginController extends AbstractController
 
     public function dashboard() {
 
+        
         $this->loginService->check();
         $this->render("user/dashboard", []);
        
@@ -45,7 +46,7 @@ class LoginController extends AbstractController
             }
 
         } else {
-           $err = "Eingaben unvollständig.";
+           $err = "";
         }
 
         $this->render("user/login", ['err' => $err]);
