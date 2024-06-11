@@ -38,8 +38,8 @@ Dieses Projekt wird kontinuierlich erweitert und umfasst folgende Technologien:
 Zum Start präsentiere ich ein eigenes Framework auf Basis des MVC-Prinzips. Dies dient als Beweis meines tiefgehenden Verständnisses von MVC-basierten Frameworks und meiner Fähigkeit, diese selbst zu implementieren.
 
 ### Ordnerstruktur
-    ```bash
-/project-root
+    
+```bash/project-root
 │
 ├── /app
 │   ├── Controllers
@@ -58,8 +58,8 @@ Zum Start präsentiere ich ein eigenes Framework auf Basis des MVC-Prinzips. Die
 │   └── web.php
 │
 └── /vendor
-    └── ...
-    ```
+    └── ... ```
+   
 
 ## Installation und Nutzung
 
