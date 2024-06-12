@@ -2,7 +2,7 @@
 
 include __DIR__ . "/../../views/layout/header.php";
 
-
+echo "<h2>Beiträge</h2>";
 echo '<ul class="my list-group">';
 
 foreach($posts AS $post) : ?>

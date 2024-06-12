@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .navbar-toggler-icon {
-            background-image: url('https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css');
+        .navbar-custom {
+            background-color: #343a40; /* Dunkelgrau/Schwarz */
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #fff; /* Weißer Text */
+        }
+        .navbar-custom .nav-link:hover {
+            color: #d4d4d4; /* Hellgrau bei Hover */
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="./../index.php">Dashboard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../index.php">Startseite</a>
-                </li>
-                <!-- Weitere Navigationspunkte hier einfügen -->
-            </ul>
-        </div>
+
     </nav>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="examples/css/style.css">
     <style>
@@ -10,22 +11,33 @@
             background-image: url('https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css');
         }
     </style>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .navbar-custom {
+            background-color: #343a40; /* Dunkelgrau/Schwarz */
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #fff; /* Weißer Text */
+        }
+        .navbar-custom .nav-link:hover {
+            color: #d4d4d4; /* Hellgrau bei Hover */
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="./index.php">Dashboard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Startseite</a>
-                </li>
-                <!-- Weitere Navigationspunkte hier einfügen -->
-            </ul>
-        </div>
+       
     </nav>
+
+
+
+
+
     <div class="container">
         <h1>Dashboard</h1>
 
@@ -36,10 +48,11 @@
                         <h2>Willkommen im Dashboard</h2>
                         <p>Im Rahmen meiner aktuellen Bewerbungsphase ist es gut neben meinen Referenzen auch einen umfassenden Einblick in meine Fähigkeiten zu geben. Hierfür habe ich dieses Repository erstellt, in welchem man den Aufbau eines eigenen MVCs beobachten kann in der Commit-Historie.
                         </p><p>
-Ziel dieses Projekts ist es, alle Technologien, die ich verwende, in einer praxisnahen Anwendung zu demonstrieren. Mit der Zeit wird dieses Repository wachsen und eine Vielzahl von Techniken und Frameworks umfassen, darunter HTML, CSS, JavaScript, jQuery, PHP, Ajax und SQL. Darüber hinaus werden Schnittstellen mit XML, CSV und JSON sowie Arbeiten mit Frameworks wie Laravel, Symfony und Zend integriert.
-</p><p>
-Zum Start präsentiere ich ein <a href="public/index.php/index">eigenes Framework</a> auf Basis des MVC-Prinzips. Dies dient als Anschauungsbeispiel meines Verständnisses von MVC-basierten Frameworks und meiner Fähigkeit, diese selbst zu implementieren und zu <a href="https://github.com/MoinCodeSoftware/presentation" target="_blank">versionieren</a>.</p>
-                            </p>
+                        Ziel dieses Projekts ist es, alle Technologien, die ich verwende, in einer praxisnahen Anwendung zu demonstrieren. Mit der Zeit wird dieses Repository wachsen und eine Vielzahl von Techniken und Frameworks umfassen, darunter HTML, CSS, JavaScript, jQuery, PHP, Ajax und SQL. Darüber hinaus werden Schnittstellen mit XML, CSV und JSON sowie Arbeiten mit Frameworks wie Laravel, Symfony und Zend integriert.
+                        </p><p>
+                        Zum Start präsentiere ich ein <a href="public/index.php/index">eigenes Framework</a> auf Basis des MVC-Prinzips. Dies dient als Anschauungsbeispiel meines Verständnisses von MVC-basierten Frameworks und meiner Fähigkeit, diese selbst zu implementieren und zu <a href="https://github.com/MoinCodeSoftware/presentation" target="_blank">versionieren</a>.</p>
+                        <p>In der <a href="https://github.com/MoinCodeSoftware/presentation#bewerbungs-dashboard" target="_blank">README.MD</a> im im GitHub Repository finden Sie die Zugangsdaten für den Beispiel-User. Alternativ können Sie das Repository clonen und nachbauen. Files und SQL Dateien sind vollständig vorhanden.</p>                          
+                    </p>
                     </div>
                 </div>
             </div>

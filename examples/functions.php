@@ -53,6 +53,7 @@ print_r( showcaseReference($changeMe) );
 
 
 ?>
+<br />
 <h1>Funktionen</h1>
 <div class="container">
 

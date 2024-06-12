@@ -41,4 +41,5 @@ foreach($comments as $comment) { ?>
     </div>
 </div>
 
+<br /><br /><br /><br />
 <?php include __DIR__ . "/../../views/layout/footer.php"; ?>

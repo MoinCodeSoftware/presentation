@@ -98,7 +98,7 @@ $code = 'class Entry implements ArrayAccess
 ?>
 
 
-
+<br />
 <h1>ArrayAccess Beispiel</h1>
 
 <div class="container">
@@ -108,22 +108,22 @@ $code = 'class Entry implements ArrayAccess
 echo $layout->cardStart();
 echo $layout->formatCode($code);
 echo $layout->cardEnd();
-
+echo "<br />";
 echo $layout->cardStart();
 echo "<b>offsetExists:</b>:";
 var_dump(isset($entry['content']));
 echo $layout->cardEnd();
-
+echo "<br />";
 echo $layout->cardStart();
 echo "<b>offsetGet</b>:";
 var_dump($entry['content']);
 echo $layout->cardEnd();
-
+echo "<br />";
 echo $layout->cardStart();
 $entry["content"] = "trigger";
 echo "<b>offsetSet</b>: {$entry->setMe}";
 echo $layout->cardEnd();
-
+echo "<br />";
 echo $layout->cardStart();
 echo "<b>offsetUnset: (muss leer sein)</b>:";
 unset($entry['content']);
