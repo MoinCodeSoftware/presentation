@@ -24,6 +24,30 @@
         .list-group-item:nth-child(even) {
             background-color: #f2f2f2;
         }
+        .rainbow-link {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow-animation 2s linear infinite;
+    text-decoration: none; /* Um Unterstreichungen für Links zu entfernen */
+}
+
+.rainbow-link:hover {
+    animation-play-state: paused; /* Stoppt die Animation beim Hovern */
+}
+
+@keyframes rainbow-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
     </style>
 </head>
 

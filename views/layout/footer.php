@@ -1,11 +1,11 @@
 
 </div>
 
-<footer class="footer bg-dark fixed-bottom">
+<footer class="footer  fixed-bottom">
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <a class="navbar-brand" href="https://github.com/MoinCodeSoftware/presentation" target="_blank" style="color:#fff;">Visit on GitHub!</a>
+                <a class="navbar-brand rainbow-link" href="https://github.com/MoinCodeSoftware/presentation" target="_blank">Visit on GitHub!</a>
             </div>
         </div>
     </div>
